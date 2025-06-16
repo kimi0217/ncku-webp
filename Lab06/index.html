@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" 
+      crossorigin="anonymous">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        /* google font*/
+        font-family: "LXGW WenKai Mono TC", monospace;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .carousel-inner img{
+        max-height: 600px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .ready::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      .ready {
+        position: relative;
+        background-image: url(./img/pic.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+      }
+
+      .ready h1,
+      .ready p,
+      .ready button {
+        position: relative;
+        z-index: 2;
+      }
+
+      </style>
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">xxxxx實驗室</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active border-start border-1 ps-3" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link01</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link02</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link03</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <section class="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/img1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block position-absolute start-0 end-0 text-start ps-5 pb-4" 
+              style="background-color: rgba(0, 0, 0, 0.5)">
+              <h5 class="display-4">First slide label</h5>
+              <p class="fs-3">Some representative placeholder content for the first slide.</p>
+              <a href="#" class="btn btn-primary fs-3">click me</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/img2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/img3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- features-->
+    <section class="features">
+      <div class="container">
+        <div class="row d-flex flex-lg-row justify-content-evenly">
+          <div class="col-lg-4 text-center my-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+              <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+            </svg>
+            <h1 class="display-4">Discord</h1>
+            <p class="fs-3">Discord is a popular communication platform where people can chat, voice call, and video call with friends or communities in real time.</p>
+          </div>
+          <div class="col-lg-4 text-center my-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-threads-fill" viewBox="0 0 16 16">
+              <path d="M6.81 9.204c0-.41.197-1.062 1.727-1.062.469 0 .758.034 1.146.121-.124 1.606-.91 1.818-1.674 1.818-.418 0-1.2-.218-1.2-.877Z"/>
+              <path d="M2.59 16h10.82A2.59 2.59 0 0 0 16 13.41V2.59A2.59 2.59 0 0 0 13.41 0H2.59A2.59 2.59 0 0 0 0 2.59v10.82A2.59 2.59 0 0 0 2.59 16M5.866 5.91c.567-.81 1.315-1.126 2.35-1.126.73 0 1.351.246 1.795.711.443.466.696 1.132.754 1.983q.368.154.678.363c.832.559 1.29 1.395 1.29 2.353 0 2.037-1.67 3.806-4.692 3.806-2.595 0-5.291-1.51-5.291-6.004C2.75 3.526 5.361 2 8.033 2c1.234 0 4.129.182 5.217 3.777l-1.02.264c-.842-2.56-2.607-2.968-4.224-2.968-2.675 0-4.187 1.628-4.187 5.093 0 3.107 1.69 4.757 4.222 4.757 2.083 0 3.636-1.082 3.636-2.667 0-1.079-.906-1.595-.953-1.595-.177.925-.651 2.482-2.733 2.482-1.213 0-2.26-.838-2.26-1.936 0-1.568 1.488-2.136 2.663-2.136.44 0 .97.03 1.247.086 0-.478-.404-1.296-1.426-1.296-.911 0-1.16.288-1.45.624l-.024.027c-.202-.135-.875-.601-.875-.601Z"/>
+            </svg>
+            <h1 class="display-4">Threads</h1>
+            <p class="fs-3">Threads is a social media platform created by Instagram that allows users to share text-based posts and join conversations in a dedicated space.</p>
+          </div>
+          <div class="col-lg-4 text-center my-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+            <h1 class="display-4">GitHub</h1>
+            <p class="fs-3">GitHub is a widely-used platform for software development, enabling users to host, review, and collaborate on code projects together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ready-->
+     <section class="ready text-center text-bg-dark py-5">
+      <h1 class="display-3">Title 123</h1>
+      <p class="fs-3 px-5">Certainly! Here’s a sample paragraph: The sun was setting behind the distant hills, painting the sky with brilliant shades of orange and pink. A gentle breeze rustled through the leaves of the oak trees, carrying with it the sweet scent of wildflowers. Nearby, a small stream trickled over smooth stones, its soft murmur blending with the cheerful chirping of birds. It was a peaceful evening, perfect for quiet reflection or a leisurely walk through nature.</p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary fs-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about p-5 pb-0">
+      <div class="container">
+        <h1 class="display-2 text-center">老師資訊</h1>
+        <div class="row  d-flex align-items-center">
+          <div class="col-lg-7  d-flex align-items-center">
+            <p class="fs-3">酷洛米，港譯可羅米，是三麗鷗一隻戴著黑色惡魔頭巾（酷洛米的頭巾有時是紫色）兔子造型的女性卡通形象，酷洛米的頭巾有個粉色骷髏，頭巾上的骷髏會隨酷洛米的心情變換表情，酷洛米的尾巴亦是惡魔形狀，在2005年10月31日誕生。</p>
+          </div>
+          <div class="col-lg-5">
+            <img src="./img/teacher.png" class="img-fluid" alt="..." style="height: 30rem;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid bg-secondary-subtle pt-3 my-3">
+          <div class="row ">
+              <p class="fs-5 text-center">&copy; 感知學習與人機合作實驗室 2025.06.16</p>
+          </div>
+      </div>
+  </footer>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" 
+    crossorigin="anonymous"></script>
+</html>

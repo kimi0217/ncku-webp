@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: "LXGW WenKai Mono TC", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- top -->
+    <section class="top">
+        <div class="container d-flex justify-content-evenly align-items-center p-2">
+            <div class=""><a href="#" class="link-secondary fs-4">我是超連結</a></div>
+            <div class=""><a href="#" class="link-secondary fs-2">角落生物實驗室</a></div>
+            <div class=""><button type="button" class="btn btn-outline-primary">Search</button></div>
+        </div>
+    </section>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">導覽列</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- home section-->
+       <div class="container-fluid bg-dark text-white p-3">
+            <h1 class="text-center display-1 m-3">Sumikko Gurashi</h1>
+            <p class="text-center fs-4">**角落生物（Sumikko Gurashi）**是由日本San-X公司設計的可愛角色，因為害羞或特別，總是喜歡躲在角落。造型簡單又療癒，深受大小朋友喜愛。</p>
+            <a href="#" class="link-light fs-3">continue reading...</a>
+        </div>
+
+        <!-- card -->
+        <section class="card">
+            <div class="container">
+                <div class="row p-3">
+                    <div class="col-12 col-lg-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="./img/img1.jpg" class="img-fluid rounded-start pt-5" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="text-primary">標籤
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </h5>
+                                    <h5 class="card-title">怕冷的白熊</h5>
+                                    <p class="card-text">北極熊予人的印象是很會禦寒和強壯的動物，以下這隻白熊卻非常怕冷，自從遇到一隻企鵝告訴他南方有溫暖的小島後，他便決定離開北極到角落生活。</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="./img/img2.jpg" class="img-fluid rounded-start pt-5" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="text-primary">標籤
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </h5>
+                                    <h5 class="card-title">以為自己是企鵝的河童</h5>
+                                    <p class="card-text">這隻在「角落生活」當中有點像企鵝又有點不像的企鵝？（加問號才是他的名字）是其中一個主角。看他名字也知道，其實他不知道自己是不是一隻真的企鵝，所以經常會看企鵝圖鑑，可惜還是看不到跟自己一樣綠色的企鵝。</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main-->
+         <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="p-3">
+                            <h1>角落生物是什麼？</h1>
+                            <img src="./img/pic1.jpeg" class="img-fluid" alt="...">
+                            <p class="fs-5">早於 2012 年，設計師横溝友里為 San-X 創立了喜歡躲藏在角落的小生物角色，並推出了首批商品，從此角落生物 Sumikko Gurashi 就誕生了！</p>
+                        </div>
+                        <div class="p-3">
+                            <h1>角落生物爆紅原因？</h1>
+                            <img src="./img/pic2.webp" class="img-fluid" alt="...">
+                            <p class="fs-5">集體出沒，軟萌大爆發：過去的日本卡通角色大部份都是單一主角，像 San-X 的鬆弛熊、Sanrio 的 Hello Kitty 等都是作為重點主角面世，而角落生物則是少數「以群體出沒」的卡通角色。</p>
+                        </div>
+                        <div class="p-3">
+                            <h1>擁有缺點才受人憐惜</h1>
+                            <img src="./img/pic3.webp" class="img-fluid" alt="...">
+                            <p class="fs-5">回望角落生物出生時，其角色概念可說是非常大膽且反市場而行。卡通角色背負着兒童教育的責任，一般人對於他們的想像都是擁有好的個性。但角落生物偏偏就是一群不完美的個體。</p>
+                        </div>
+                        <div class="p-3">
+                            <h1>其他ip</h1>
+                            <p class="fs-5">除了角落生物，橫溝由里目前最知名的其他IP角色就是「朗萌綺盟（Nandemo Ikimono）」，這些角色同樣充滿可愛與療癒感，並持續受到粉絲關注。</p>
+                        </div>
+                        <div class="p-3">
+                            <h1>朗萌綺盟（Nandemo Ikimono）</h1>
+                            <p class="fs-5 mb-1">「nandemo」 (什麼都)：: 表示一切事物，沒有任何限制。</p>
+                            <p class="fs-5 mb-1">「ikimono」 (生物)：: 意指有生命的事物。</p>
+                            <p class="fs-5 mb-1">意指所有事物，都被賦予了生命，成為可愛療癒的「Nanmono」生物。</p>
+                        </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="p-3 bg-light m-3">
+                        <h1>English introduction</h1>
+                        <p class="fs-5">Sumikko Gurashi, also known as ‘Corner Friends,’ are anthropomorphic characters created by the Japanese company San-X in 2012. They like to gather in corners and live a relaxed life. Each of these characters has a distinct personality, but all possess unique charm and a sense of comfort.</p>
+                    </div>
+
+                    <div class="p-3 bg-light m-3">
+                        <h1>期中考</h1>
+                        <ul>
+                            <li><a href="#">2025.06.16</a></li>
+                            <li><a href="#">2025.06.16</a></li>
+                            <li><a href="#">2025.06.16</a></li>
+                            <li><a href="#">2025.06.16</a></li>
+                            <li><a href="#">2025.06.16</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="p-3 bg-light m-3">
+                        <h1>期末考</h1>
+                        <ul>
+                            <li><a href="#">2025.06.16</a></li>
+                            <li><a href="#">2025.06.16</a></li>
+                            <li><a href="#">2025.06.16</a></li>
+                            <li><a href="#">2025.06.16</a></li>
+                            <li><a href="#">2025.06.16</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="container-fluid bg-secondary-subtle py-3 my-3">
+                <div class="row ">
+                    <p class="fs-5 text-center">&copy; 感知學習與人機合作實驗室 2025.06.16</p>
+                </div>
+            </div>
+        </footer>
+  </body>
+</html>
